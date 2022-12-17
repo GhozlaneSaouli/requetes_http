@@ -1,3 +1,7 @@
+//window.onload = () => {
+//document.getElementById("btn").addEventListener("click", chargementDeRessource);
+//};
+
 function chargementDeRessource() {
   const requestHttpTest = new XMLHttpRequest();
   requestHttpTest.onload = handleLoad;
@@ -39,9 +43,3 @@ function addImageContainer(image) {
 
   document.getElementById("containerImages").appendChild(divCard);
 }
-
-window.onload = () => {
-  document
-    .getElementById("btn")
-    .addEventListener("click", chargementDeRessource);
-};
